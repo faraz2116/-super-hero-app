@@ -1,123 +1,73 @@
-<div class="loginbox">
-  <div class="row">
-    <div class="col-6 col-md-6">
-      <table class="mobile-table" border="1">
-        <tr>
-          <td colspan="3">
-            <form [formGroup]="superHeroForm">
-              <input type="text" id="result" formControlName="hero_input" style="height:50px;width: 179px;" />
-            </form>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <button class="button button5" (click)="setValue('1')" style="padding-right: 18px;padding-left: 18px;">
-            <div class="row" style="margin: 2px">
-              1
-            </div>
-            <div class="row" style="margin: -5px">
-                @.?
-            </div>
-            </button>
-          </td>
-          <td><button class="button button5" (click)="setValue('2')" style="padding-right: 17px;padding-left: 16px;">
-              <div class="row" style="margin: 2px">
-                  2
-                </div>
-                <div class="row" style="margin: -5px">
-                    ABC
-                </div>
-          </button></td>
-          <td><button class="button button5" (click)="setValue('3')" style="padding-right: 21px;padding-left: 21px;">
-              <div class="row" style="margin: 2px">
-                  3
-                </div>
-                <div class="row" style="margin: -5px">
-                    DEF
-                </div>
-          </button></td>
-        </tr>
-        <tr>
-          <td><button class="button button5" (click)="setValue('4')" style="padding-right: 18px;padding-left: 18px;">
-              <div class="row" style="margin: 2px">
-                  4
-                </div>
-                <div class="row" style="margin: -5px">
-                    GHI
-                </div>
-          </button></td>
-          <td><button class="button button5" (click)="setValue('5')">
-              <div class="row" style="margin: 2px">
-                  5
-                </div>
-                <div class="row" style="margin: -5px">
-                    JKL
-                </div>
-          </button></td>
-          <td><button class="button button5" (click)="setValue('6')">
-              <div class="row" style="margin: 2px">
-                  6
-                </div>
-                <div class="row" style="margin: -5px">
-                    MNO
-                </div>
-          </button></td>
-        </tr>
-        <tr>
-          <td><button class="button button5" (click)="setValue('7')">
-              <div class="row" style="margin: 2px">
-                  7
-                </div>
-                <div class="row" style="margin: -5px">
-                    PQRS
-                </div>
-          </button></td>
-          <td><button class="button button5" (click)="setValue('8')">
-              <div class="row" style="margin: 2px">
-                  8
-                </div>
-                <div class="row" style="margin: -5px">
-                    TUV
-                </div>
-          </button></td>
-          <td><button class="button button5" (click)="setValue('9')">
-              <div class="row" style="margin: 2px">
-                  9
-                </div>
-                <div class="row" style="margin: -5px">
-                    WXYZ
-                </div>
-          </button></td>
-        </tr>
-        <tr>
-          <td><button class="button button5" (click)="setValue('*')">
-              <div class="row" style="margin: 2px">
-                  *
-                </div>
-                <div class="row" style="margin: -5px">
-                    SEND
-                </div>
-          </button></td>
-          <td><button class="button button5" (click)="setValue('0')">
-              <div class="row" style="margin: 2px">
-                  0
-                </div>
-                <div class="row" style="margin: -5px">
-                    ZERO
-                </div>
-          </button></td>
-          <td><button class="button button5" (click)="setValue('#')">
-              <div class="row" style="margin: 2px">
-                  #
-                </div>
-                <div class="row" style="margin: -5px">
-                    SPACE
-                </div>
-          </button></td>
-        </tr>
-      </table>
-    </div>
-
-    <div class="col-6"></div>
+<div class="row" style="margin: 0px; text-align: center; padding: 20px">
+  <div class="col-md-12">
+      <label style="font-size: xx-large;font-weight: bolder">Call Heroes By Dialing Codes</label>
   </div>
+</div>
+<div class="row" style="margin: 0px;">
+  <div class="col-md-6" style="margin-top:100px;border-right: 2px solid;text-align: center;">
+    <div class="row">
+      <div class="col-md-12">
+        <form [formGroup]="superHeroForm">
+          <input type="text" id="result" formControlName="hero_input"
+            style="padding: 16px; margin: 2px; width: 267px;border: 3px solid;border-radius: 5%" />
+        </form>
+      </div>
+      <div class="col-md-12">
+        <button type="button" class="btn" (click)="setValue('1')"><span
+            style="display: block">1</span><span>@.?</span></button>
+        <button type="button" class="btn" (click)="setValue('2')"><span
+            style="display: block">2</span><span>ABC</span></button>
+        <button type="button" class="btn" (click)="setValue('3')"><span
+            style="display: block">3</span><span>DEF</span></button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <button type="button" class="btn" (click)="setValue('4')"><span
+            style="display: block">4</span><span>GHI</span></button>
+        <button type="button" class="btn" (click)="setValue('5')"><span
+            style="display: block">5</span><span>JKL</span></button>
+        <button type="button" class="btn" (click)="setValue('6')"><span
+            style="display: block">6</span><span>MNO</span></button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <button type="button" class="btn" (click)="setValue('7')"><span
+            style="display: block">7</span><span>PQRS</span></button>
+        <button type="button" class="btn" (click)="setValue('8')"><span
+            style="display: block">8</span><span>TUV</span></button>
+        <button type="button" class="btn" (click)="setValue('9')"><span
+            style="display: block">9</span><span>WXYZ</span></button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <button type="button" class="btn" (click)="callHero()"><span
+            style="display: block">*</span><span>SEND</span></button>
+        <button type="button" class="btn" (click)="setValue('0')"><span
+            style="display: block">0</span><span>ZERO</span></button>
+        <button type="button" class="btn" (click)="setValue(' ')"><span
+            style="display: block">#</span><span>SPACE</span></button>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+          <button type="button" class="btn clear-button" (click)="clearField()"><span style="display: block">CLEAR</span></button>
+        </div>
+      </div>
+  </div>
+  <div class="col-md-5" style="margin-top:100px">
+    <div class="row" *ngIf="superHero">
+      <div class=" col-md-6 show-hero">
+        <img src="assets/images/{{superHero}}.jpeg" style="height: inherit; width: inherit" alt="">
+      </div>
+    </div>
+    <div class="row" *ngIf="errorMesage" style="padding: inherit">
+        <div class="show-hero-not-found">
+          <Label>{{errorMesage}}</Label>
+        </div>
+      </div>
+  </div>
+
 </div>
